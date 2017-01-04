@@ -1,3 +1,20 @@
+Skip to content
+This repository
+Search
+Pull requests
+Issues
+Gist
+ @kimhyunsoo91
+ Watch 6
+  Star 7
+  Fork 5 imtaekh/my_app
+ Code  Issues 0  Pull requests 0  Projects 0  Wiki  Pulse  Graphs
+Tree: e7506f4b17 Find file Copy pathmy_app/public/stylesheets/master.css
+e7506f4  on 18 Jan 2016
+ imtaekh login and user added
+0 contributors
+RawBlameHistory
+122 lines (119 sloc)  1.74 KB
 /*
   Base Style
 */
@@ -20,27 +37,41 @@ footer{
   text-align:center;
   padding: 20px 0;
 }
+.float_right{
+  float:right;
+  margin-left:5px;
+}
+.error_message{
+  color: tomato;
+}
 
 /*
   Posts Style
 */
 
-.posts{
+.posts,
+.login,
+.users{
   max-width: 500px;
   margin: 0 auto;
 }
-.posts h3{
+.posts h3,
+.login h3,
+.users h3{
   background-color: #75CEF7;
   padding: 5px 0;
   padding-left: 2px;
 }
-.posts h2{
+.posts h2,
+.login h2,
+.users h2{
   text-align:center;
 }
 .posts .index ul li{
   padding: 4px;
 }
 .posts .index ul li>span{
+  width: 90px;
   float:right;
 }
 .posts .index ul li:nth-child(odd){
@@ -48,6 +79,9 @@ footer{
 }
 .posts .index ul li:nth-child(even){
   background-color: #A8D8EF;
+}
+.posts .index ul li.header{
+  background-color: #cccccc;
 }
 .posts .show .body{
   min-height:70px;
@@ -67,13 +101,17 @@ footer{
 .posts .show .tools{
   margin-bottom:20px;
 }
-.posts .posts_form{
+.posts .posts_form,
+.login .login_form,
+.users .users_form{
   display:block;
   width: 400px;
   margin: 0 auto;
   margin-bottom:20px;
 }
-.posts .posts_form label{
+.posts .posts_form label,
+.login .login_form label,
+.users .users_form label{
   display:block;
   margin:5px 0;
 }
@@ -86,3 +124,17 @@ footer{
   width:400px;
   height: 100px;
 }
+.login .submit_btn,
+.users .submit_btn{
+  display: block;
+  margin-top: 10px;
+}
+.users .show .content{
+  padding-left:15px;
+  padding-bottom:20px;
+}
+.users .show .user_info{
+  font-size: 17px;
+}
+Contact GitHub API Training Shop Blog About
+© 2017 GitHub, Inc. Terms Privacy Security Status Help
